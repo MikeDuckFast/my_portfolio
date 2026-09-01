@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Mai Phat — Personal Profile</title>
+<meta name="description" content="Personal profile and portfolio of Mai Phat — software engineer and student.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- Spine: connective circuit line running through the whole page -->
+<div class="spine" aria-hidden="true"><div class="spine__fill" id="spineFill"></div></div>
+
+<!-- ============ NAV ============ -->
+<nav class="nav" id="nav">
+  <a href="#hero" class="nav__mark" data-node>MP</a>
+  <ul class="nav__links">
+    <li><a href="#about" data-node>About</a></li>
+    <li><a href="#education" data-node>Education</a></li>
+    <li><a href="#skills" data-node>Skills</a></li>
+    <li><a href="#status" data-node>Status</a></li>
+    <li><a href="#contact" data-node>Contact</a></li>
+  </ul>
+</nav>
+
+<!-- ============ HERO ============ -->
+<header class="hero" id="hero">
+  <canvas id="heroCanvas" class="hero__canvas" aria-hidden="true"></canvas>
+  <div class="hero__vignette" aria-hidden="true"></div>
+
+  <div class="hero__content">
+    <p class="hero__eyebrow">Personal profile record</p>
+    <h1 class="hero__title">
+      <span class="hero__hello">Hey, I'm</span>
+      <span class="hero__name">Mai&nbsp;Phat</span>
+    </h1>
+    <p class="hero__tagline">A student studying at Nong Lam University.<br>
+      This product is built with Claude.
+    </p>
+
+    <a href="#about" class="hero__scroll" data-node aria-label="Scroll to profile">
+      <span class="hero__scroll-line"></span>
+      <span class="hero__scroll-text">Scroll to view profile</span>
+    </a>
+  </div>
+</header>
+
+<main>
+
+  <!-- ============ ABOUT ============ -->
+  <section class="section" id="about" data-section="01">
+    <div class="section__head reveal">
+      <span class="section__node" data-node></span>
+      <h2 class="section__title">Personal information</h2>
+      <p class="section__sub">The basics — who I am and where I work from.</p>
+    </div>
+
+    <div class="about">
+      <div class="about__portrait reveal">
+        <div class="about__frame">
+          <div class="about__frame-glow"></div>
+          <!-- ĐỔI ẢNH TẠI ĐÂY: Thay 'assets/avatar.jpg' bằng đường dẫn hoặc tên file ảnh của bạn -->
+          <img src="assets/image.png" alt="Mai Phat Avatar" class="about__avatar-img">
+        </div>
+      </div>
+
+      <dl class="about__fields reveal">
+        <div class="field">
+          <dt>Full name</dt>
+          <dd>Mai Duc Phat</dd>
+        </div>
+        <div class="field">
+          <dt>Date of birth</dt>
+          <dd>24 March 2008</dd>
+        </div>
+        <div class="field">
+          <dt>Nationality</dt>
+          <dd>Vietnamese</dd>
+        </div>
+        <div class="field">
+          <dt>Current location</dt>
+          <dd>Ho Chi Minh City, Vietnam</dd>
+        </div>
+        <div class="field">
+          <dt>Role</dt>
+          <dd>Front-end &amp; Product Engineer</dd>
+        </div>
+        <div class="field field--wide">
+          <dt>About</dt>
+          <dd>I am currently an Information Technology student at Nong Lam University, where I am actively learning new skills and keeping up with global trends.</dd>
+        </div>
+      </dl>
+    </div>
+  </section>
+
+  <!-- ============ EDUCATION TIMELINE ============ -->
+  <section class="section" id="education" data-section="02">
+    <div class="section__head reveal">
+      <span class="section__node" data-node></span>
+      <h2 class="section__title">Education timeline</h2>
+      <p class="section__sub">Formal study, start to present.</p>
+    </div>
+
+    <ol class="timeline">
+      <li class="timeline__item reveal">
+        <div class="timeline__marker"></div>
+        <div class="timeline__body" data-node tabindex="0">
+          <span class="timeline__period">2013 — 2014</span>
+          <h3 class="timeline__title">Long Trach Kindergarten</h3>
+        </div>
+      </li>
+      <li class="timeline__item reveal">
+        <div class="timeline__marker"></div>
+        <div class="timeline__body" data-node tabindex="0">
+          <span class="timeline__period">2014 — 2019</span>
+          <h3 class="timeline__title">Long Trach 1 Primary School</h3>
+        </div>
+      </li>
+      <li class="timeline__item reveal">
+        <div class="timeline__marker"></div>
+        <div class="timeline__body" data-node tabindex="0">
+          <span class="timeline__period">2019 — 2023</span>
+          <h3 class="timeline__title">Long Trach Secondary School</h3>
+        </div>
+      </li>
+      <li class="timeline__item reveal">
+        <div class="timeline__marker"></div>
+        <div class="timeline__body" data-node tabindex="0">
+          <span class="timeline__period">2023 — 2026</span>
+          <h3 class="timeline__title">Rach Kien High School</h3>
+        </div>
+      </li>
+      <li class="timeline__item timeline__item--current reveal">
+        <div class="timeline__marker"></div>
+        <div class="timeline__body" data-node tabindex="0">
+          <span class="timeline__period">2026 — Present</span>
+          <h3 class="timeline__title">Nong Lam University</h3>
+          <span class="timeline__badge">Current</span>
+        </div>
+      </li>
+    </ol>
+  </section>
+
+  <!-- ============ SKILLS ============ -->
+  <section class="section" id="skills" data-section="03">
+    <div class="section__head reveal">
+      <span class="section__node" data-node></span>
+      <h2 class="section__title">Skills</h2>
+      <p class="section__sub">What I reach for most, and how confident I am with it.</p>
+    </div>
+
+    <div class="skills">
+      <div class="skills__group reveal">
+        <h3 class="skills__group-title">Engineering</h3>
+        <ul class="skillbars">
+          <li class="skillbar"><span class="skillbar__label">C++ / Python</span>
+            <span class="skillbar__track"><span class="skillbar__fill" style="--level:72%"></span></span></li>
+          <li class="skillbar"><span class="skillbar__label">HTML &amp; CSS</span>
+            <span class="skillbar__track"><span class="skillbar__fill" style="--level:60%"></span></span></li>
+          <li class="skillbar"><span class="skillbar__label">Java</span>
+            <span class="skillbar__track"><span class="skillbar__fill" style="--level:48%"></span></span></li>
+          <li class="skillbar"><span class="skillbar__label">UX / UI Design</span>
+            <span class="skillbar__track"><span class="skillbar__fill" style="--level:58%"></span></span></li>
+        </ul>
+      </div>
+
+      <div class="skills__group reveal">
+        <h3 class="skills__group-title">Craft &amp; tools</h3>
+        <ul class="skillbars">
+          <li class="skillbar"><span class="skillbar__label">AI skills</span>
+            <span class="skillbar__track"><span class="skillbar__fill" style="--level:80%"></span></span></li>
+          <li class="skillbar"><span class="skillbar__label">Word / Excel / Powerpoint</span>
+            <span class="skillbar__track"><span class="skillbar__fill" style="--level:75%"></span></span></li>
+          <li class="skillbar"><span class="skillbar__label">Canva &amp; Edit</span>
+            <span class="skillbar__track"><span class="skillbar__fill" style="--level:78%"></span></span></li>
+          <li class="skillbar"><span class="skillbar__label">Learning ability</span>
+            <span class="skillbar__track"><span class="skillbar__fill" style="--level:70%"></span></span></li>
+        </ul>
+      </div>
+
+      <div class="skills__group reveal">
+        <h3 class="skills__group-title">Working languages</h3>
+        <ul class="skilltags">
+          <li>Vietnamese — native</li>
+          <li>English — fluent ( very Bad )</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ HEALTH & MARITAL STATUS ============ -->
+  <section class="section" id="status" data-section="04">
+    <div class="section__head reveal">
+      <span class="section__node" data-node></span>
+      <h2 class="section__title">Status</h2>
+      <p class="section__sub">Health and marital status, as commonly requested on personal profiles.</p>
+    </div>
+
+    <div class="statusgrid">
+      <div class="statuscard reveal">
+        <div class="statuscard__icon" aria-hidden="true">
+          <svg viewBox="0 0 48 24" class="pulse-line">
+            <polyline points="0,12 10,12 14,3 19,21 24,12 48,12" />
+          </svg>
+        </div>
+        <h3 class="statuscard__title">Health status</h3>
+        <ul class="statuslist">
+          <li class="statuslist__row"><span class="statuslist__label">Height</span><span class="statuslist__value">178 Cm</span></li>
+          <li class="statuslist__row"><span class="statuslist__label">Weight</span><span class="statuslist__value">55 Kg</span></li>
+          <li class="statuslist__row"><span class="statuslist__label">Blood type</span><span class="statuslist__value">ABBA</span></li>
+          <li class="statuslist__row"><span class="statuslist__label">Eyesight</span><span class="statuslist__value">Normal</span></li>
+          <li class="statuslist__row"><span class="statuslist__label">General condition</span><span class="statuslist__value">Excellent</span></li>
+        </ul>
+      </div>
+
+      <div class="statuscard reveal">
+        <div class="statuscard__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" class="ring-icon">
+            <circle cx="12" cy="12" r="8" />
+          </svg>
+        </div>
+        <h3 class="statuscard__title">Marital status</h3>
+        <p class="statuscard__value">Dating</p>
+        <p class="statuscard__note">No dependents; fully flexible for relocation or travel.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="section section--contact" id="contact" data-section="05">
+    <div class="section__head reveal">
+      <span class="section__node" data-node></span>
+      <h2 class="section__title">Contact information</h2>
+      <p class="section__sub">The fastest way to reach me is email — I read everything.</p>
+    </div>
+
+    <div class="contact">
+      <div class="contact__details reveal">
+        <a class="contact__row" href="mailto:maiphat@example.com" data-node>
+          <span class="contact__label">Email</span>
+          <span class="contact__value">duckfast1807@gmail.com</span>
+        </a>
+        <a class="contact__row" href="tel:+84900000000" data-node>
+          <span class="contact__label">Phone</span>
+          <span class="contact__value">0855788713</span>
+        </a>
+        <div class="contact__row">
+          <span class="source__label">Location</span>
+          <span class="contact__value">Ho Chi Minh City, Vietnam</span>
+        </div>
+        <a class="contact__row" href="https://github.com/" target="_blank" rel="noopener" data-node>
+          <span class="contact__label">GitHub</span>
+          <span class="contact__value">https://github.com/MikeDuckFast</span>
+        </a>
+        <a class="contact__row" href="https://linkedin.com/" target="_blank" rel="noopener" data-node>
+          <span class="contact__label">Facebook</span>
+          <span class="contact__value">https://www.facebook.com/ducphatisreal/</span>
+        </a>
+      </div>
+      <form class="contact__form reveal" id="contactForm">
+        <div class="formfield">
+          <label for="name">Your name</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="formfield">
+          <label for="email">Your email</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="formfield">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+        </div>
+        <button type="submit" class="btn" data-node>Send message</button>
+        <p class="formfield__status" id="formStatus" role="status" aria-live="polite"></p>
+      </form>
+      
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Mai Phat. Built with plain HTML, CSS, JavaScript and Claude.</p>
+  </footer>
+
+</main>
+
+<audio id="bgMusic" loop preload="auto">
+  <source src="assets/background-music.mp3" type="audio/mpeg">
+</audio>
+
+<button class="soundtoggle" id="soundToggle" aria-pressed="true" aria-label="Tắt/bật nhạc nền">
+  <span class="soundtoggle__icon" id="soundIcon">♪</span>
+</button>
+
+<script src="js/script.js"></script>
+</body>
+</html>
